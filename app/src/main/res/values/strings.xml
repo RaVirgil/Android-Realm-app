@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ANDROID Tema2</string>
+    <string name="add_user">Add User</string>
+    <string name="remove_user">Remove User</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="btn_sync">Sync</string>
+
+
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="guide_line">150dp</dimen>
+    <dimen name="btnPadding">8dp</dimen>
+    <dimen name="btnMargin">10dp</dimen>
+    <dimen name="editTextMargin">5dp</dimen>
+    <dimen name="btnElevation">5dp</dimen>
+    <dimen name="btnRadius">10dp</dimen>
+    <dimen name="txtSize">14sp</dimen>
+
+
+
+</resources>

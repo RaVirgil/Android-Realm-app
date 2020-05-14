@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fragment_user_control"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserControl">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/btnMargin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_sync"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+       />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="@dimen/guide_line" />
+
+    <Button
+        android:id="@+id/btn_add_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round_corner"
+        android:padding="@dimen/btnPadding"
+        app:layout_constraintCircleRadius="@dimen/btnRadius"
+        android:text="@string/add_user"
+        android:elevation="@dimen/btnElevation"
+        app:layout_constraintTop_toBottomOf="@id/guide_line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+    <Button
+        android:id="@+id/btn_remove_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_round_corner"
+        android:layout_margin="@dimen/btnMargin"
+        android:elevation="@dimen/btnElevation"
+        android:text="@string/remove_user"
+
+        android:padding="@dimen/btnPadding"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_sync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_sync"
+        android:padding="@dimen/btnPadding"
+
+        android:layout_margin="@dimen/btnMargin"
+        android:elevation="@dimen/btnElevation"
+        android:background="@drawable/button_round_corner"
+        app:layout_constraintTop_toBottomOf="@id/btn_remove_user"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_first_name"
+        android:layout_margin="@dimen/editTextMargin"
+        android:textColor="@color/pureBlack"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guide_line"
+        />
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_margin="@dimen/editTextMargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/pureBlack"
+        android:hint="@string/hint_last_name"
+        app:layout_constraintTop_toBottomOf="@id/first_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
